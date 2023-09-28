@@ -1,0 +1,19 @@
+body {
+    font: arial helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+#artigo1 {
+    background-color: rgb(221, 255, 0);
+    width: 400px;
+    margin: 70px;
+    padding: 1px 10px;
+    box-shadow: 3px 5px 4px rgb(79, 79, 79);
+}
+
+#artigo2 {
+    background-color: rgb(221, 255, 0);
+    width: 400px;
+    margin: 70px;
+    padding: 1px 10px;
+    border-radius: 20px;
+}
