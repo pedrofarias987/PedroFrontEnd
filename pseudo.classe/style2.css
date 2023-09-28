@@ -1,8 +1,0 @@
-div > p {
-    display: none;
-}
-
-div:hover > p {
-    display: block;
-    background-color: yellow;/*quando passar o mouse por cima vai aparecer o conteúdo oculto com o fundo amarelo*/
-}
