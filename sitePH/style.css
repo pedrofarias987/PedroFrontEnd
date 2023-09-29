@@ -1,0 +1,53 @@
+header {
+    background-image: linear-gradient( rgb(204, 0, 255), rgb(0, 255, 225), rgb(0, 28, 128));
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+ 
+nav ul li  {
+    display:inline;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder ;
+}
+
+
+nav ul li a:hover {
+    color: rgb(0, 255, 242);
+    text-decoration: underline;
+}
+h1 {
+    font-size: impact regular;
+}
+body {
+    color: darkgreen;
+    
+}
+
+#loja {
+    width: 500px;
+    height: 200px;
+    margin-left: 460px;
+    margin-top: 200px;
+}
+
+.pro {
+    margin-left: 400px;
+    font-size: 40px;
+}
+
+#game {
+    width: 500px;
+    margin-top: 30px;
+    margin-left: 400px;
+    font-size: 20px;
+}
