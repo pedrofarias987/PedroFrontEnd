@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+            font: normal 18px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estuods com dom</h1>
+    <p>Aqui vem um parágrafo</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <p id="pTeste">Qualquer coisa</p>
+    <p class="pClass">Outro texto</p>
+    <p class="pClass"> Mais um texto</p>
+    <button>Clique</button>
+    <button id="botao2">Passe o mouse</button>
+    <button id="abririmg">abrir</button>
+
+
+    <script>
+         let corpo = document.body 
+         corpo.style.backgroundColor = "black"
+
+         let paragrafo1 = document.getElementsByTagName('p')[1]
+         paragrafo1.style.color = 'red'
+
+
+         let clique = document.querySelector('button')
+         
+         
+         /* Adiciona um evento que executa um código quando clico no elemento*/
+         
+         clique.addEventListener('click', function(event) {
+            corpo.style.backgroundImage = "url('https://i.em.com.br/APBem974jN_ZMs5meh3hgp5GTws=/1200x900/smart/imgsapp.em.com.br/app/noticia_127983242361/2022/04/23/1361830/lula-sorri-e-usa-oculos-juliet_1_337581.png')"
+            corpo.style.backgroundSize = 'cover'
+        });
+
+        
+
+       
+
+        
+        let mouse = document.getElementById('botao2')
+
+
+        /*executa um evento quando o mouse passar por cima*/
+        mouse.addEventListener('mouseover', function(event) {
+        console.log("passou o mouse por cima")
+        corpo.style.backgroundColor = 'pink';
+        });
+        
+
+         mouse.addEventListener('mouseout', function(event) {
+           console.log("mouse saiu de cima")
+           corpo.style.backgroundColor = 'black'
+        })
+
+
+        document.addEventListener('keydown', function(event){
+            console.log("tecla pressionada" + event.key)
+        })
+
+
+        document.addEventListener('dblclick', function(event){
+            if (corpo.style.backgroundColor !== 'red'){
+                corpo.style.backgroundColor = 'red'
+            } else {
+                corpo.style.backgroundColor = 'green'
+            }
+        })
+
+
+        let abririmg = document.getElementById("abririmg");
+        abririmg.addEventListener("click", function(){
+            setTimeout(function(){
+                window.open("https://i.pinimg.com/736x/38/7d/7a/387d7a2823dd49252f488dcd7023a513.jpg", "_blank")
+            }, 2000)
+        })
+
+    </script>
+</body>
+</html>
