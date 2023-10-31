@@ -1,0 +1,23 @@
+body {
+    height: 100%;
+    background: #686868;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    width: 80px;
+    height: 80px;
+    border: 8px solid #434343;
+    border-top-color: rgb(0, 255, 242);
+    border-radius: 50%;
+    animation: girando-o-anel 1s infinite;
+}
+
+@keyframes girando-o-anel {
+     to {
+        transform: rotate(1turn);
+     }
+    
+}
